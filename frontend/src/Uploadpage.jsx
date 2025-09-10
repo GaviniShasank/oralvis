@@ -46,9 +46,9 @@ export default function UploadPage() {
           justifyContent: "center",
           textAlign: "center",
           height: "40vh",
-          background: "linear-gradient(135deg, #0f2027, #002F6C)",
+          background: "linear-gradient(135deg, #ffffffff, #002F6C)",
           padding: "0 20px",
-          color: "#fff",
+          color: "#0c0707ff",
         }}
       >
         <UploadCloud size={64} color="#f58220" />
@@ -73,7 +73,7 @@ export default function UploadPage() {
           onSubmit={handleSubmit}
           style={{
             flex: "0 1 500px",
-            background: "#fff",
+            background: "#000000ff",
             borderRadius: "20px",
             padding: "40px",
             boxShadow: "0 15px 35px rgba(0,0,0,0.2)",
@@ -96,7 +96,7 @@ export default function UploadPage() {
             <label
               style={{
                 fontWeight: "600",
-                color: "#333",
+                color: "#ffffffff",
                 display: "block",
                 marginBottom: "5px",
               }}
@@ -112,7 +112,7 @@ export default function UploadPage() {
                 width: "100%",
                 padding: "12px",
                 borderRadius: "10px",
-                border: "1px solid #ccc",
+                border: "1px solid #ffffffff",
                 fontSize: "1rem",
                 outline: "none",
                 resize: "none",
@@ -124,7 +124,7 @@ export default function UploadPage() {
             <label
               style={{
                 fontWeight: "600",
-                color: "#333",
+                color: "#ffffffff",
                 display: "block",
                 marginBottom: "5px",
               }}
@@ -139,7 +139,7 @@ export default function UploadPage() {
                 width: "100%",
                 padding: "10px",
                 borderRadius: "10px",
-                border: "1px solid #ccc",
+                border: "1px solid #ffffffff",
               }}
             />
           </div>
@@ -148,7 +148,7 @@ export default function UploadPage() {
             type="submit"
             style={{
               backgroundColor: "#f58220",
-              color: "#fff",
+              color: "#ffffffff",
               border: "none",
               padding: "15px 0",
               width: "100%",

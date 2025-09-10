@@ -154,20 +154,20 @@ export default function PatientReview() {
         <div style={{ width: "100%", maxWidth: "1000px" }}>
           {uploads.map((upload, index) => (
             <div
-              key={upload._id || index}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                background: "#fff",
-                borderRadius: "15px",
-                boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
-                padding: "20px",
-                marginBottom: "20px",
-                transition: "transform 0.3s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-5px)")}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-            >
+  key={upload._id || index}
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    background: "#000",   // black background
+    color: "#fff",        // white text
+    borderRadius: "15px",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.3)", // stronger shadow for black box
+    padding: "20px",
+    marginBottom: "20px",
+    transition: "transform 0.3s",
+  }}
+>
+
               {/* Patient Info */}
               <div style={{ marginBottom: "15px" }}>
                 <p style={{ fontWeight: "600", marginBottom: "5px" }}>
@@ -230,7 +230,7 @@ export default function PatientReview() {
                   style={{
                     display: "inline-block",
                     background: "#4CAF50",
-                    color: "#fff",
+                    color: "#000000ff",
                     padding: "8px 15px",
                     borderRadius: "8px",
                     textDecoration: "none",

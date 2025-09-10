@@ -29,7 +29,7 @@ app.use(cors({
   credentials: true
 }));
 
-// ---------- MongoDB ----------
+// ---------- MongoDB ---------
 if (!process.env.mongoconnect) {
   console.error("Missing MONGO connection string in .env (mongoconnect).");
   process.exit(1);

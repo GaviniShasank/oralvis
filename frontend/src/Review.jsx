@@ -12,7 +12,7 @@ export default function PatientReview() {
   // ✅ Fetch uploads + signed URLs
   const fetchUploads = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/admin/submissions", {
+      const response = await axios.get("https://oralvis-g0qh.onrender.com/admin/submissions", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
 
@@ -27,7 +27,7 @@ export default function PatientReview() {
           };
 
           if (sub.originalImageKey) {
-            const signed = await axios.get("http://localhost:3000/get-url", {
+            const signed = await axios.get("https://oralvis-g0qh.onrender.com/get-url", {
               params: { key: sub.originalImageKey },
               ...tokenHeader,
             });

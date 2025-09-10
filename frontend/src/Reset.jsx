@@ -21,7 +21,7 @@ function ResetPassword() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3000/reset-password", {
+      const res = await axios.post("https://oralvis-g0qh.onrender.com/reset-password", {
         email,
         otp,
         newPassword,

@@ -11,7 +11,7 @@ export default function DoctorDashboard() {
   const fetchSubmissions = async () => {
     try {
       // Replace with your actual backend URL
-      const response = await axios.get("http://localhost:3000/admin/submissions", {
+      const response = await axios.get("https://oralvis-g0qh.onrender.com/admin/submissions", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

@@ -35,7 +35,7 @@ export default function PatientReview() {
           }
 
           if (sub.annotatedImageKey) {
-            const signed = await axios.get("http://localhost:3000/get-url", {
+            const signed = await axios.get("https://oralvis-g0qh.onrender.com/get-url", {
               params: { key: sub.annotatedImageKey },
               ...tokenHeader,
             });
@@ -43,7 +43,7 @@ export default function PatientReview() {
           }
 
           if (sub.pdfKey) {
-            const signed = await axios.get("http://localhost:3000/get-url", {
+            const signed = await axios.get("https://oralvis-g0qh.onrender.com/get-url", {
               params: { key: sub.pdfKey },
               ...tokenHeader,
             });
@@ -75,7 +75,7 @@ export default function PatientReview() {
     formData.append("annotated", reportFile);
 
     try {
-      await axios.post(`http://localhost:3000/admin/annotate/${id}`, formData, {
+      await axios.post(`https://oralvis-g0qh.onrender.com/admin/annotate/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
           "Content-Type": "multipart/form-data",
@@ -94,7 +94,7 @@ export default function PatientReview() {
   const handleGenerateReport = async (id) => {
     try {
       const response = await axios.post(
-        `http://localhost:3000/admin/generate-report/${id}`,
+        `https://oralvis-g0qh.onrender.com/admin/generate-report/${id}`,
         {},
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );

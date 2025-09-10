@@ -21,7 +21,7 @@ const secretKey = process.env.secretKey || "replace_this_secret";
 app.use(bodyParser.json({ limit: "10mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-  origin: process.env.origin || "*",
+  origin: process.env.origin,
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));

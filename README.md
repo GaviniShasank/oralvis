@@ -1,6 +1,7 @@
-## Demo Credentials
+## 🚀 Demo Credentials  
 
-Use the following credentials to log in as a **Doctor**:
+You can try the live demo here: [OralVis App](https://oralvist.netlify.app/)  
 
-- **Username:** `22h51a6623@cmrcet.ac.in`
-- **Password:** `Shasank@123`
+### 🔑 Doctor Login  
+- **Username:** `22h51a6623@cmrcet.ac.in`  
+- **Password:** `Shasank@123`  

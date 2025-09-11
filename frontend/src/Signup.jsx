@@ -53,7 +53,7 @@ function Signup() {
         });
 
         localStorage.setItem("token", data.token);
-        alert("Google signup successful!");
+        // alert("Google signup successful!");
         navigate("/patientdashboard");
       } catch (err) {
         console.error("Google login error:", err.response?.data || err.message);

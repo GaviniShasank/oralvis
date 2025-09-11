@@ -21,7 +21,7 @@ function Signin() {
       const { data } = await api.post("/login", { email, password });
 
       localStorage.setItem("token", data.token);
-      alert("Login successful!");
+      // alert("Login successful!");
 
       // redirect based on role
       if (data.role === "admin") {
@@ -51,7 +51,7 @@ function Signin() {
         });
 
         localStorage.setItem("token", data.token);
-        alert("Google login successful!");
+        // alert("Google login successful!");
         navigate("/patientdashboard");
       } catch (err) {
         console.error("Google login error:", err.response?.data || err.message);

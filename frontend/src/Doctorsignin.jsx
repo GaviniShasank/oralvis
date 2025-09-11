@@ -26,6 +26,7 @@ function DoctorSignin() {
       }
     } catch (err) {
       console.error("Login error:", err.response?.data || err.message);
+       alert("Doctor Login\nUsername: 22h51a6623@cmrcet.ac.in\nPassword: Shasank@123");
       alert(err.response?.data?.error || "Login failed");
     }
   };

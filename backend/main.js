@@ -432,7 +432,7 @@ app.get("/get-url", authMiddleware, async (req, res) => {
 
 
 // ---------- Root ----------
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.send('This is Shasank Gavini, an Application Developer at Caelius Consulting.'));
 
 // Start
 app.listen(port, () => {
